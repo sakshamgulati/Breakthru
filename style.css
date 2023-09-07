@@ -12,6 +12,15 @@
   display: inline-block;
 }
 
+.grayscale {
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+
+.grayscale:hover {
+  filter: none;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;

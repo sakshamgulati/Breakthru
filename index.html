@@ -39,6 +39,8 @@
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
+      top: 100%;
+      /* This positions the dropdown below the button */
     }
 
     .dropdown-content a {
@@ -49,7 +51,7 @@
     }
 
     .dropdown-content a:hover {
-      background-color: #f1f1f1
+      background-color: #f1f1f1;
     }
 
     .dropdown:hover .dropdown-content {
@@ -59,6 +61,15 @@
     .dropdown:hover .dropbtn {
       /* TODO:change color to a darker shade */
       background-color: #070e37;
+    }
+
+    .grayscale {
+      filter: grayscale(100%);
+      transition: filter 0.5s;
+    }
+
+    .grayscale:hover {
+      filter: none;
     }
   </style>
 
@@ -92,15 +103,18 @@
             <li><a href="./services.html" title="">Services Provided</a></li>
             <li>
               <div class="dropdown">
-                <button class="dropbtn">Case Studies</button>
+                <button class="btn btn-default navbar-btn">Case Studies</button>
 
                 <div class="dropdown-content">
-                  <a href="./project.html">American Express</a>
-                  <a href="#">Times Now</a>
-                  <a href="#">Coca Cola</a>
+                  <a href="./amex.html">American Express</a>
+                  <a href="./timesnow.html">Times Now</a>
+                  <a href="./cocacola.html">Coca Cola</a>
                 </div>
               </div>
             </li>
+            <li><a href="https://calendly.com/breakthru_consulting" target="_blank">Schedule a Free Call</a></li>
+
+            <li><a href="./index.html" title="">Contact us- (647)-571-4918</a></li>
           </ul>
         </div>
       </div>
@@ -113,7 +127,7 @@
       <div class="row">
         <div class="col-xs-12">
           <h1>Breakthru Consulting</h1>
-          <p>Experts with HR</p>
+          <p>HR Consulting for Small Business</p>
           <br>
           <a href="./project.html" class="btn btn-default btn-lg" title="">Discover</a>
         </div>
@@ -127,13 +141,32 @@
         <div class="col-xs-12 col-md-8 col-md-offset-2">
           <div class="text-center">
             <h2>About Us</h2>
-            <p>Empowering businesses through expert HR consulting for optimized growth and success.
-              <br>
-              Welcome to Breakthru Consulting, where HR solutions meet success. Our expert consulting firm specializes
-              in guiding businesses through the intricacies of human resources management. With tailored strategies and
-              a team of seasoned professionals, we're dedicated to optimizing your workforce and driving growth.
-              Join us in shaping a thriving future for your organization.
-            </p>
+            <h3>Welcome to Breakthru Consulting</h3>
+            <p>Greetings, fellow business owner! Are you finding the ever-growing heap of human resource tasks
+              overwhelming? Especially as your company spreads its wings? Is your Controller or Administrator,
+              responsible for HR, feeling stretched to the limit, unable to juggle more HR-related work?</p>
+            <p>The consistent disregard of HR matters might just be putting a damper on your company's growth, inch by
+              inch.</p>
+            <p>Turning a blind eye to HR responsibilities is like setting a ticking time bomb, waiting to go off.</p>
+            <p>Imagine this: a myriad of small businesses similar to yours, scaling up with grace, have uncovered the
+              perfect antidote – HR consulting. Engaging a part-time HR consultant isn't just smart; it's strategic. It
+              bridges gaps and resolves HR hurdles, allowing you to stay in your zone of genius. No more penalties or
+              productivity hiccups stemming from HR negligence.</p>
+            <h3>Our Experience Speaks Volumes</h3>
+            <p>Breakthru Consulting isn't new to this game. We've walked alongside industry giants like Coca-Cola and
+              American Express, providing top-notch HR consulting services that fuel their success. But we're not
+              stopping there. We've also nurtured startups like ABC and DEF, infusing our expertise into their
+              foundations for growth.</p>
+            <h3>How Can We Be of Service?</h3>
+            <p>At Breakthru Consulting, we're not just consultants; we're your partners in small business success. We
+              collaborate closely with your leadership team to elegantly manage your human resources conundrums. In
+              short, we're here to rescue you from the labyrinth of time-consuming HR tasks. Our small business HR
+              consulting lets you tap into expert insights, ensuring your personnel matters are handled promptly and
+              adeptly. Think of us as your off-site HR heroes, freeing you to do what you do best – drive your business
+              onward and upward!</p>
+            <p>We're all ears and eager to lend a hand. Share your burning issues, and let's chart a course to brighter
+              horizons together.</p><br>
+            <p>Call us for a complimentary consultation: 647-571-4918</p>
           </div>
         </div>
       </div>
@@ -174,7 +207,7 @@
                     Directory for streamlined HR processes. Additionally, we conducted Manpower and Salary Benchmarking
                     studies, empowering Times with informed hiring decisions.
                   </p>
-                  <a href="./project.html" class="btn btn-primary" title="">
+                  <a href="./timesnow.html" class="btn btn-primary" title="">
                     Discover
                   </a>
                 </div>
@@ -205,7 +238,7 @@
                     transforming high-performing individuals into effective and supportive managers, ensuring
                     organizational growth and harmony.
                   </p>
-                  <a href="./project.html" class="btn btn-primary" title="">
+                  <a href="./amex.html" class="btn btn-primary" title="">
                     Discover
                   </a>
                 </div>
@@ -302,40 +335,35 @@
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
-          <img src="./assets/images/logo-01.png" alt="" class="img-responsive reveal-content image-center" height="300"
-            width="300">
-
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xs-12 col-md-2">
+          <img src="./assets/images/logo-01.png" alt="" class="img-responsive reveal-content image-center grayscale"
+            height="100" width="100">
         </div>
-        <div class="col-xs-12 col-md-4">
-          <img src="./assets/images/Airtel.png" alt="" class="img-responsive reveal-content image-center" height="300"
-            width="300">
-
+        <div class="col-xs-12 col-md-2">
+          <img src="./assets/images/Airtel.png" alt="" class="img-responsive reveal-content image-center grayscale"
+            height="100" width="100">
         </div>
-        <div class="col-xs-12 col-md-4">
-          <img src="./assets/images/giani.png" alt="" class="img-responsive reveal-content image-center" height="300"
-            width="300">
-
+        <div class="col-xs-12 col-md-2">
+          <img src="./assets/images/giani.png" alt="" class="img-responsive reveal-content image-center grayscale"
+            height="100" width="100">
+        </div>
+        <div class="col-xs-12 col-md-2">
+          <img src="./assets/images/logo-02.png" alt="" class="img-responsive reveal-content image-center grayscale"
+            height="100" width="100">
+        </div>
+        <div class="col-xs-12 col-md-2">
+          <img src="./assets/images/subros.png" alt="" class="img-responsive reveal-content image-center grayscale"
+            height="100" width="100">
+        </div>
+        <div class="col-xs-12 col-md-2">
+          <img src="./assets/images/coca-cola.png" alt="" class="img-responsive reveal-content image-center grayscale"
+            height="100" width="100">
         </div>
 
-        <div class="row">
-
-
-          <div class="col-xs-12 col-md-4">
-            <img src="./assets/images/logo-02.png" alt="" class="img-responsive reveal-content image-center"
-              height="300" width="300">
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <img src="./assets/images/coca-cola.png" alt="" class="img-responsive reveal-content image-center"
-              height="300" width="300">
-
-          </div>
-        </div>
       </div>
     </div>
   </div>
-
 
   <div class="section-container contact-container">
     <div class="container">

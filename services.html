@@ -17,7 +17,52 @@
   <link href="./assets/favicon.ico" rel="icon">
 
   <link href="" rel="stylesheet">
+  <style>
+    .dropbtn {
+      background-color: #4457c0;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
 
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      top: 100%;
+      /* This positions the dropdown below the button */
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      /* TODO:change color to a darker shade */
+      background-color: #070e37;
+    }
+  </style>
 
   <title>Services and Team</title>
 
@@ -48,15 +93,17 @@
             <li><a href="./services.html" title="">Services Provided</a></li>
             <li>
               <div class="dropdown">
-                <button class="dropbtn">Case Studies</button>
-
+                <button class="btn btn-default navbar-btn">Case Studies</button>
                 <div class="dropdown-content">
-                  <a href="./project.html">American Express</a>
-                  <a href="#">Times Now</a>
-                  <a href="#">Coca Cola</a>
+                  <a href="./amex.html">American Express</a>
+                  <a href="./timesnow.html">Times Now</a>
+                  <a href="./cocacola.html">Coca Cola</a>
                 </div>
               </div>
             </li>
+            <li><a href="https://calendly.com/breakthru_consulting" target="_blank">Schedule a Free Call</a></li>
+
+            <li><a href="./index.html" title="">Contact us- (647)-571-4918</a></li>
           </ul>
         </div>
       </div>
@@ -243,17 +290,17 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-md-4">
-          <img src="./assets/images/profil-01.jpg" alt="" class="reveal img-responsive reveal-content image-center">
-          <h3>Saksham Gulati</h3>
-          <h4> Consultant</h4>
+          <img src="./assets/images/profil-02.jpg" alt="" class="reveal img-responsive reveal-content image-center">
+          <h3>Pradeep Gulati</h3>
+          <h4> Principal HR Consultant`</h4>
           <p> Just an average Joe</p>
           <a href="https://www.linkedin.com/in/sakshamgulati/" class="social-round-icon fa-icon" title="">
             <i class="fa fa-linkedin" aria-hidden="true"></i>
           </a>
           </p>
         </div>
-
-        <div class="col-xs-12 col-md-4">
+        <p>25+ years of experience in HR consulting</p>
+        <!-- <div class="col-xs-12 col-md-4">
           <img src="./assets/images/profil-02.jpg" alt="" class="reveal img-responsive reveal-content image-center">
           <h3>Pradeep Gulati</h3>
           <h4>Principal HR Consultant</h4>
@@ -275,7 +322,7 @@
               <i class="fa fa-linkedin" aria-hidden="true"></i>
             </a>
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
